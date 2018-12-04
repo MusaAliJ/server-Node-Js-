@@ -3,6 +3,8 @@ console.log("Starting Server");
 var express = require("express");
 var hbs = require("hbs");
 var app = express();
+
+hbs.registerPartials(__dirname + "/views/partials")
 app.set('view engine', 'hbs');
 
 
